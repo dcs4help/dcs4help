@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Core Solutions - Your IT Partner</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        /* Navigation link hover color changed to red */
+        .nav-link:hover {
+            color: #dc2626; /* Red-600 */
+        }
+        /* Primary button styles (kept blue) */
+        .btn-primary {
+            background-color: #2563eb; /* Darker blue */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8; /* Even darker blue on hover */
+        }
+        /* Custom scroll-to-top button styles (kept blue) */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Place at the bottom */
+            right: 30px; /* Place at the right */
+            z-index: 99; /* High z-index to be on top */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #2563eb; /* Blue background */
+            color: white; /* White text */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 50%; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #1d4ed8; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors">Digital Core Solutions</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-red-600 transition-colors font-medium nav-link rounded-md p-2 hover:bg-gray-100">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-red-600 transition-colors font-medium nav-link rounded-md p-2 hover:bg-gray-100">Services</a>
+                <a href="#products" class="text-gray-600 hover:text-red-600 transition-colors font-medium nav-link rounded-md p-2 hover:bg-gray-100">Products</a>
+                <a href="#contact" class="text-gray-600 hover:text-red-600 transition-colors font-medium nav-link rounded-md p-2 hover:bg-gray-100">Contact Us</a>
+                <a href="#address" class="text-gray-600 hover:text-red-600 transition-colors font-medium nav-link rounded-md p-2 hover:bg-gray-100">Address</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-red-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Services</a>
+            <a href="#products" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Products</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contact Us</a>
+            <a href="#address" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Address</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-700 to-red-700 text-white flex items-center justify-center min-h-screen section-padding pt-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Digital Core Solutions</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Your Trusted Partner for Comprehensive IT Solutions</p>
+            <a href="#contact" class="btn-primary inline-block text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">About Us</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                <p class="mb-6">
+                    At <span class="font-semibold text-red-600">Digital Core Solutions</span>, we are dedicated to providing top-tier IT services and products to individuals and businesses alike. With a strong commitment to excellence and customer satisfaction, we strive to be your one-stop solution for all your technology needs.
+                </p>
+                <p class="mb-6">
+                    Our team of highly skilled and experienced professionals is passionate about technology and committed to delivering reliable, efficient, and innovative solutions. We understand the critical role technology plays in today's world, and we are here to ensure your systems run smoothly, securely, and effectively.
+                </p>
+                <p>
+                    From hardware maintenance to software support, networking, and digital presence, Digital Core Solutions is equipped to handle a diverse range of IT challenges. We pride ourselves on our prompt service, technical expertise, and personalized approach to every client.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-100 section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Computer & Printer Maintenance -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <div class="text-red-600 text-5xl mb-4 text-center">💻</div> <!-- Icon -->
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Computer & Printer Repair & Maintenance</h3>
+                    <p class="text-gray-600 text-center">Expert repair and routine maintenance for all types of computers (desktops, laptops) and printers, ensuring optimal performance and longevity.</p>
+                </div>
+                <!-- Service Card 2: CCTV & IT Peripherals -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <div class="text-red-600 text-5xl mb-4 text-center">🎥</div> <!-- Icon -->
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">CCTV & IT Peripherals Support</h3>
+                    <p class="text-gray-600 text-center">Comprehensive repair and maintenance services for CCTV systems and a wide range of IT peripherals, keeping your entire setup functional.</p>
+                </div>
+                <!-- Service Card 3: Networking Solutions -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <div class="text-red-600 text-5xl mb-4 text-center">🌐</div> <!-- Icon -->
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Networking Solutions</h3>
+                    <p class="text-gray-600 text-center">Design, installation, and maintenance of robust and secure network infrastructures for seamless connectivity and data transfer.</p>
+                </div>
+                <!-- Service Card 4: Software Tech Support -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <div class="text-red-600 text-5xl mb-4 text-center">💾</div> <!-- Icon -->
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Software Technical Support</h3>
+                    <p class="text-gray-600 text-center">Reliable technical support for various software issues, troubleshooting, installations, and configurations to ensure smooth operation.</p>
+                </div>
+                <!-- Service Card 5: Digital Marketing -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <div class="text-red-600 text-5xl mb-4 text-center">📈</div> <!-- Icon -->
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Digital Marketing Services</h3>
+                    <p class="text-gray-600 text-center">Boost your online presence with our digital marketing strategies, including SEO, social media marketing, and online advertising.</p>
+                </div>
+                <!-- Service Card 6: Website Development -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-200">
+                    <div class="text-red-600 text-5xl mb-4 text-center">💻</div> <!-- Icon -->
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3 text-center">Website Development</h3>
+                    <p class="text-gray-600 text-center">Professional website design and development, creating responsive, user-friendly, and engaging websites tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Products</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                <p class="mb-6 text-center">
+                    Digital Core Solutions is your reliable source for a wide array of IT-related products. We offer high-quality, genuine products to meet both your personal and business requirements.
+                </p>
+                <ul class="list-disc list-inside space-y-3 text-center md:text-left">
+                    <li class="flex items-center justify-center md:justify-start">
+                        <span class="text-red-600 mr-2">✔️</span>
+                        <span class="font-semibold text-gray-800">Supply of All Kinds of IT Related Products:</span> From essential computer components to advanced networking devices, we provide a comprehensive range of IT hardware and accessories.
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start">
+                        <span class="text-red-600 mr-2">✔️</span>
+                        <span class="font-semibold text-gray-800">Licensed Software:</span> We facilitate the purchase and installation of genuine licensed software, ensuring compliance and access to the latest features and security updates.
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start">
+                        <span class="text-red-600 mr-2">✔️</span>
+                        <span class="font-semibold text-gray-800">Peripherals & Accessories:</span> Keyboards, mice, monitors, external storage, webcams, and more – find all your necessary peripherals with us.
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start">
+                        <span class="text-red-600 mr-2">✔️</span>
+                        <span class="font-semibold text-gray-800">Networking Equipment:</span> Routers, switches, cables, and other networking components to build or upgrade your network infrastructure.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-gray-100 section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+                <p class="text-center text-lg text-gray-700 mb-6">Have a question or need assistance? Reach out to us!</p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Your Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="john.doe@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Tell us how we can help..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full font-semibold text-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">Send Message</button>
+                    <p class="text-center text-sm text-gray-500 mt-4">
+                        (Note: This is a static form and does not send emails directly. Please use the contact details below for direct communication.)
+                    </p>
+                </form>
+                <div class="mt-8 text-center space-y-2">
+                    <p class="text-xl font-semibold text-gray-800">Mobile: <a href="tel:+919839028290" class="text-red-600 hover:underline">9839028290</a></p>
+                    <p class="text-xl font-semibold text-gray-800">Email: <a href="mailto:dcs4help@gmail.com" class="text-red-600 hover:underline">dcs4help@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Address Section -->
+    <section id="address" class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Location</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center">
+                <p class="mb-4">
+                    Visit us at our office:
+                </p>
+                <p class="font-semibold text-gray-800 text-xl mb-4">
+                    Plot no 1012 sa, chhota bharwara, gomtinagar, near sdsn degree college lucknow.
+                </p>
+                <!-- Google Maps Embed (Static, no API key needed for simple embed) -->
+                <div class="mt-8 rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.803706059929!2d81.04278431504388!3d26.84074218315263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2f5a6b0c2a5%3A0x1c3b1a8d0e2e5f1!2sSDSN%20Degree%20College!5e0!3m2!1sen!2sin!4v1678912345678!5m2!1sen!2sin"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Digital Core Solutions Location"
+                    ></iframe>
+                </div>
+                <p class="mt-6 text-gray-600 text-sm">
+                    (The map shows the approximate location near SDSN Degree College. For precise directions, please contact us.)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2025 Digital Core Solutions. All rights reserved.</p>
+            <p>Plot no 1012 sa, Chhota Bharwara, Gomtinagar, near S. D. S. N. Degree College lucknow.</p>
+            <p>Mobile: <a href="tel:+919839028290" class="text-red-400 hover:underline">9839028290</a></p>
+            <p>Email: <a href="mailto:dcs4help@gmail.com" class="text-red-400 hover:underline">dcs4help@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">⬆️</button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('.nav-link, #mobile-menu a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerOffset = document.querySelector('header').offsetHeight; // Get header height
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            });
+        });
+
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+</html>
